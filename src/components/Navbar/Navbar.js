@@ -1,15 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div>
-    <nav className="navbar">
-    <div className="container">
-    <button>Go on</button>
-    </div>
+    <nav>
     </nav>
-    
-    </div>
   )
 }
 
