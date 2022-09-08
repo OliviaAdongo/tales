@@ -27,19 +27,25 @@ const ReadingList = () => {
 
     })
   }
-
   return (
     <div>
     <form>
     <label>
     Reading list 
     <input type="text" name="book_name" placeholder='type here' onChange={handleChange}/>
-    
   </label>
   <button onClick={submit}>Add to list</button>
-  <button onClick={remove}>Delete from list</button>
-
+ 
 </form>
+
+
+
+<div className="readerlist">
+<ReadingContainer>
+<button onClick={remove}>Delete from list</button>
+</ReadingContainer>
+
+</div>
     </div>
   )
 }

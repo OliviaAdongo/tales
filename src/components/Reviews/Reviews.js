@@ -11,7 +11,6 @@ const Reviews = () => {
 
 
   console.log(data)
-
   return (
     <div>
     <form>

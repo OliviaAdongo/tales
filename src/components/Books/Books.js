@@ -16,7 +16,7 @@ const Books = ({data}) => {
   return (
     <div>
     <BookContainer>
-    <BookHeading>Books we love</BookHeading>
+    <BookHeading>Books We Love</BookHeading>
     <BookWrapper>
     {data.map((book, index) =>{
       return(
