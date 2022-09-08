@@ -1,7 +1,15 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import{
+  ReadingContainer,
+  Reader,
+  ListWrapper,
+  ReadCard,
+  ReadList,
+  List
+} from './ReadingListStyler';
 
-const ReadingList = () => {
+const ReadingList = ({words}) => {
 
   const [data, setData] = useState({
     book_name: ""
@@ -42,7 +50,19 @@ const ReadingList = () => {
 
 <div className="readerlist">
 <ReadingContainer>
+<Reader>Welcome Reader to our list</Reader>
+<ListWrapper>
+{words.map((read,  index) =>{
+return (
+  <ReadCard key={index}>
+  <ReadList>
+  <List>{read.book_name}</List>
+  </ReadList>
+  </ReadCard>
+)
+})}
 <button onClick={remove}>Delete from list</button>
+</ListWrapper>
 </ReadingContainer>
 
 </div>

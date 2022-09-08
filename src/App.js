@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import ReadingList from './components/ReadingList/ReadingList';
 import Reviews from './components/Reviews/Reviews';
 import {bookData} from './components/Books/data';
+import { readingData } from './components/ReadingList/data';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
     <Route path="/" element={<Home />}/>
     <Route path="/about" element={<Aboutus />}/>
     <Route path="/book" element={<Books  data={bookData} />}/>
-    <Route path="/read" element={<ReadingList />}/>
+    <Route path="/read" element={<ReadingList words={readingData}/>}/>
     <Route path="/review" element={<Reviews />}/>
     <Route path ='*' element={<ErrorPage/>}/>
     
