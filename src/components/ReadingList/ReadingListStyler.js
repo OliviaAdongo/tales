@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const ReadingContainer= styled.div`
 margin-top: 0px;
-background: white;
-width: 100vw;
+width: 1000px;
 height: 500px;
 color: black;
 font-size: 15px;
 margin-right: -9px;
 margin-left: 40px;
 border: 1px solid black;
-border-radius: 10px;
+border-radius: 15px;
 `
 export const  Reader = styled.h4`
 font-size: clamp(2rem, 2.5vw, 3rem);
