@@ -1,4 +1,6 @@
-
+.about{
+    width: 100vh;
+}
 .box1{
 position: fixed;
 top: 47%;

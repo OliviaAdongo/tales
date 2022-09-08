@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   BookContainer,
   BookWrapper,
@@ -13,19 +13,30 @@ import {
 } from './Bookstyler';
 
 const Books = ({data}) => {
+const [books, setBooks] =  useState ([])
+
+useEffect (() => {
+  fetch ('http://127.0.0.1:9292/books')
+  .then (response => response.json())
+  .then((products) =>
+  // console.log (products)
+  setBooks(products)
+  )
+}, [])
+
   return (
     <div>
     <BookContainer>
     <BookHeading>Books We Love</BookHeading>
     <BookWrapper>
-    {data.map((book, index) =>{
+    {books.map((book, index) =>{
       return(
         <BookCard key={index}>
-        <BookImage src={book.img} alt={book.alt}/>
+        <BookImage src={book.imgurl} alt={book.alt}/>
         <BookInfo>
         <BookDescription>{book.description}</BookDescription>
         <BookAuthor>{book.author}</BookAuthor>
-        <BookButton>{book.button}</BookButton>
+        <BookButton>Review</BookButton>
         </BookInfo>
         </BookCard>
       )
