@@ -1,7 +1,18 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import{
+  ReviewContainer,
+  Reviewer,
+  ReviewWrapper,
+  ReviewCard,
+  ReviewList,
+  Views
+} from './ReviewStyler';
+
 
 const Reviews = () => {
+const [reviews, setReview] = useState([])
+
   const [data, setData] = useState("")
   useEffect(()=>{
 
@@ -9,6 +20,14 @@ const Reviews = () => {
   .then((response) => {setData(response.data)})
   },[])
 
+  useEffect (() => {
+    fetch ('http://127.0.0.1:9292/review')
+    .then (response => response.json())
+    .then((reviews) =>
+    // console.log (products)
+    setReview(reviews)
+    )
+  }, [])
 
   console.log(data)
 
@@ -16,20 +35,34 @@ const Reviews = () => {
     <div>
     <form>
   <label> 
-  Tutors Name: 
-  <select>
-  <option value="grapefruit">Grapefruit</option>
-  <option value="lime">Lime</option>
-  <option selected value="coconut">Coconut</option>
-  <option value="mango">Mango</option>
-</select>
-    Review: 
+    Add Review: 
     <input type="text" name="review" />
-    
   </label>
   <input type="submit" value="Submit" />
 </form>
 
+<div className="reviewer" >
+<Reviewer>Reviews</Reviewer>
+<ReviewContainer>
+<ReviewWrapper>
+{reviews.map((read,  index) =>{
+return (
+  <ReviewCard key={index}>
+  <ReviewList>
+  <Views>{reviews.reviews}
+  </Views>
+  <button className='upvote'>upvote</button>
+  <button className= 'downvote'>downvote</button>
+  </ReviewList>
+  
+  </ReviewCard>
+)
+})}
+
+</ReviewWrapper>
+</ReviewContainer>
+
+</div>
 
 </div>
   )

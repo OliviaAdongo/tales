@@ -29,7 +29,8 @@ useEffect (() => {
     <BookContainer>
     <BookHeading>Books We Love</BookHeading>
     <BookWrapper>
-    {books.map((book, index) =>{
+    
+    {books.slice(1).map((book, index) =>{
       return(
         <BookCard key={index}>
         <BookImage src={book.imgurl} alt={book.alt}/>
