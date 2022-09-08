@@ -2,7 +2,15 @@ import React from 'react'
 
 const Books = () => {
   return (
-    <div>Books</div>
+    <div>
+    <BookContainer>
+    <BookHeading>Books we love</BookHeading>
+    <BooksWrapper>
+    
+    </BooksWrapper>
+    </BookContainer>
+    
+    </div>
   )
 }
 

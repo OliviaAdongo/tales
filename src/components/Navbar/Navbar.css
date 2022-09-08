@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     background-color: #ac815d;
     position: sticky;
@@ -17,7 +17,8 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: white;
+    font-size: 19px;
+    color: black;
     padding: 8px 25px;
     transition: all .5s  ease;
 }
