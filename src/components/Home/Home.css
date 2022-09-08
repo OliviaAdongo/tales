@@ -10,7 +10,7 @@ h4{
     padding: 1px 20px; 
     font-size: 25px;
 }
-button{
+/* button{
     position: absolute;
     right: 100px;
     bottom: 150px;
@@ -30,4 +30,4 @@ button:hover{
     box-shadow: 0  0  5px  white,  0  0  10px white, 0 0  15px white;
     font-weight: bold;
     color: black;
-}
+} */
