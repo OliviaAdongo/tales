@@ -1,4 +1,5 @@
 import axios from 'axios'
+import './Reading.css'
 import React, { useState } from 'react'
 import{
   ReadingContainer,
@@ -38,30 +39,38 @@ const ReadingList = ({words}) => {
   return (
     <div>
     <form>
-    <label>
+    <label className='text-holder'>
     Reading list 
     <input type="text" name="book_name" placeholder='type here' onChange={handleChange}/>
   </label>
-  <button onClick={submit}>Add to list</button>
+  <button className='adder-btn' onClick={submit}>Add to list</button>
  
 </form>
 
 
 
-<div className="readerlist">
+<div className="readerlist" >
+<Reader>Welcome Reader to Our List</Reader>
 <ReadingContainer>
-<Reader>Welcome Reader to our list</Reader>
 <ListWrapper>
 {words.map((read,  index) =>{
 return (
   <ReadCard key={index}>
   <ReadList>
-  <List>{read.book_name}</List>
+  <List>
+  <ul>
+  <li>{read.book_name}
+  </li>
+  </ul>
+  </List>
+  <button className='editor-btn'>Edit</button>
+  <button className= 'deleter-btn' onClick={remove}>Delete from list</button>
   </ReadList>
+  
   </ReadCard>
 )
 })}
-<button onClick={remove}>Delete from list</button>
+
 </ListWrapper>
 </ReadingContainer>
 
