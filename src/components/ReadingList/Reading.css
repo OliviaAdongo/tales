@@ -1,0 +1,47 @@
+.editor-btn{
+    background-color: paleturquoise; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-right: 19px;
+}
+.deleter-btn{
+    background-color: rgb(218, 25, 25); 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+.adder-btn{
+    background-color: paleturquoise; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    height: 50px;
+    margin-left: 25px;
+
+}
+.text-holder{
+margin-left: 19px;
+font-size: 20px;
+}
+.readlist{
+    height: 100px;
+    width: 400px;
+    background: white;
+}

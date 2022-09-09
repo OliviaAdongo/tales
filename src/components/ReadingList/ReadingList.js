@@ -40,10 +40,10 @@ const ReadingList = ({words}) => {
     <div>
     <form>
     <label className='text-holder'>
-    Reading list 
-    <input type="text" name="book_name" placeholder='type here' onChange={handleChange}/>
+    Reading list:  
+    <input type="text" className='readlist' name="book_name" placeholder='Write book name here...' onChange={handleChange}/>
   </label>
-  <button className='adder-btn' onClick={submit}>Add to list</button>
+  <button className='adder-btn' onClick={submit}>Add</button>
  
 </form>
 
@@ -64,7 +64,7 @@ return (
   </ul>
   </List>
   <button className='editor-btn'>Edit</button>
-  <button className= 'deleter-btn' onClick={remove}>Delete from list</button>
+  <button className= 'deleter-btn' onClick={remove}>Delete</button>
   </ReadList>
   
   </ReadCard>
