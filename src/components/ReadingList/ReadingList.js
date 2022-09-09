@@ -1,6 +1,6 @@
 import axios from 'axios'
 import './Reading.css'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import{
   ReadingContainer,
   Reader,
@@ -15,6 +15,17 @@ const ReadingList = ({words}) => {
   const [data, setData] = useState({
     book_name: ""
   })
+  // fetching reading list
+const [reader, setReader]= useState([])
+useEffect (() => {
+  fetch ('http://127.0.0.1:9292/reading')
+  .then (response => response.json())
+  .then((vitabu) =>
+  // console.log (products)
+  setReader(vitabu) 
+  )
+}, [])
+
 
   const handleChange = (e) => {
     const {name, value} = e.target
@@ -58,7 +69,7 @@ const ReadingList = ({words}) => {
 <Reader>Welcome Reader to Our List</Reader>
 <ReadingContainer>
 <ListWrapper> 
-{words.map((read,  index) =>{
+{reader.map((read,  index) =>{
 return (
   <ReadCard key={index}>
   <ReadList>

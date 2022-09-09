@@ -22,7 +22,7 @@ useEffect (() => {
   .then (response => response.json())
   .then((products) =>
   // console.log (products)
-  setBooks(products)
+  setBooks(products) 
   )
 }, [])
 

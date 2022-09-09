@@ -19,7 +19,7 @@ text-align: center;
     left: 0;
     width: 200px;
     height: -6px;
-    border: 3px solid #73AD21;
+    border: 3px solid #73c2fb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@ text-align: center;
     top: 150px;
     width: 200px;
     height: -6px;
-    border: 3px solid #73AD21;
+    border: 3px solid #73c2fb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,3 +62,6 @@ text-align: center;
         font-weight: bold;
         color: black;
     }
+.head1{
+    margin-left: 29px;
+}

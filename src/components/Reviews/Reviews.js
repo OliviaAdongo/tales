@@ -13,8 +13,8 @@ import{
 
 const Reviews = () => {
 // useState for upvoting and down votting
-const [upvote, setUpvote] = useState(1)
-const [downvote, setDownvote] = useState(0)
+const [upvote, setUpvote] = useState()
+const [downvote, setDownvote] = useState()
 
 const [upvoteactive, setUpvoteActive] = useState(false)
 const [downvoteactive, setDownvoteActive] = useState(false)

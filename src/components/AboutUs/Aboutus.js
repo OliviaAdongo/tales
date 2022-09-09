@@ -7,10 +7,10 @@ const Aboutus = () => {
   return (
     <div>
     <section className='about'>
-        <h2 class="headings">OUR TUTORS</h2>
+        <h2 class="head1">OUR TUTORS </h2>
         <div class="row">
             <div class="box1">
-                <h3 class="headings">Tutor</h3>
+                <h3 class="headings">EDUCATE</h3>
                 <p> Teacher, also called a schoolteacher or formally an educator, is a person who helps students to acquire knowledge, competence or virtue.                Informally the role of teacher may be taken on by anyone (e.g. when showing a colleague how to perform a specific task). In some countries, teaching young people of school age may be carried out in an informal setting, such as within the family (homeschooling), rather than in a formal setting such as a school or college. Some other professions may involve a significant amount of teaching (e.g. youth worker, pastor). </p>
                 <button className='goto-reviews' onClick={()=>{ navigate('/review')}}>Reviews</button>
             </div>

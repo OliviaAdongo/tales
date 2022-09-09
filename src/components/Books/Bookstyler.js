@@ -21,7 +21,7 @@ export const BookImage = styled.img`
 height: 300px;
 min-width: 300px;
 max-width: 100%;
-box-shadow: 8px 8px #fdc500;
+transform: rotateX() rotateY();
 `
 export const BookHeading =  styled.h1`
 font-size: clamp(2rem, 2.5vw, 3rem);
@@ -41,12 +41,7 @@ height: 200px;
 
 
 export const BookInfo = styled.div`
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
-// padding: 2rem;
-// text-align: center;
+border-radius: 3px;
 `
 export const  BookButton = styled.button`
 font-size: 1rem;
