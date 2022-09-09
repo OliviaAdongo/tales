@@ -13,8 +13,9 @@ border-radius: 15px;
 `
 export const  Reader = styled.h4`
 font-size: clamp(2rem, 2.5vw, 3rem);
-text-align: center;
+text-align: left;
 margin-bottom: 0px;
+margin-left:20px;
 `
 export const  ListWrapper = styled.div`
 
@@ -28,5 +29,6 @@ background: white;
 export const ReadList = styled.div`
 `
 export const List = styled.div`
+margin-top: 20px;
 
 `

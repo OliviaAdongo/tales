@@ -36,6 +36,11 @@ const ReadingList = ({words}) => {
 
     })
   }
+  const update = (e) =>{
+    axios.put("http://localhost:9292/reading", {
+
+    })
+  }
   return (
     <div>
     <form>
@@ -52,7 +57,7 @@ const ReadingList = ({words}) => {
 <div className="readerlist" >
 <Reader>Welcome Reader to Our List</Reader>
 <ReadingContainer>
-<ListWrapper>
+<ListWrapper> 
 {words.map((read,  index) =>{
 return (
   <ReadCard key={index}>
@@ -63,7 +68,7 @@ return (
   </li>
   </ul>
   </List>
-  <button className='editor-btn'>Edit</button>
+  <button className='editor-btn' onClick={update}>Edit</button>
   <button className= 'deleter-btn' onClick={remove}>Delete</button>
   </ReadList>
   

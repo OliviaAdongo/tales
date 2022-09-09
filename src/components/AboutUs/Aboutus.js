@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Aboutus.css'
 
 const Aboutus = () => {
+    let navigate = useNavigate()
   return (
     <div>
     <section className='about'>
@@ -9,19 +11,8 @@ const Aboutus = () => {
         <div class="row">
             <div class="box1">
                 <h3 class="headings">Tutor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! </p>
-                    <button className='goto-reviews'>Reviews</button>
+                <p> Teacher, also called a schoolteacher or formally an educator, is a person who helps students to acquire knowledge, competence or virtue.                Informally the role of teacher may be taken on by anyone (e.g. when showing a colleague how to perform a specific task). In some countries, teaching young people of school age may be carried out in an informal setting, such as within the family (homeschooling), rather than in a formal setting such as a school or college. Some other professions may involve a significant amount of teaching (e.g. youth worker, pastor). </p>
+                <button className='goto-reviews' onClick={()=>{ navigate('/review')}}>Reviews</button>
             </div>
 
             <div class="box2">
@@ -32,14 +23,10 @@ const Aboutus = () => {
             </div>
             <div class="box3">
                 
-                <h3 class="headings">Tutor 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. </p>
+                <h3 class="headings">Mr. Galleher Peterson</h3>
+                <p>I became a teacher because I love seeing the world through kids’ eyes. I loved music, math, art, and kids. Elementary allows me to do it all!!!
+                My calling came in my 30’s during the high point in my IT career. It was something that couldn’t be ignored. I wouldn’t change it for the world.It was the only major that didn’t require a foreign language. But, all kidding aside, it was the path I was meant to take!
+                The innocence and wonder of a young child make the drama and nonsense of the real world melt away for a little while. I wanted summers off.</p>
             </div>
         </div>
     </section>

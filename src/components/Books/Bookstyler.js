@@ -30,33 +30,38 @@ margin-bottom: 5rem;
 `
 
 export const BookAuthor = styled.h4`
-font-weight: 400;
 font-size: 1.5rem;
+margin-top: 40px
+font-weight: 400px;
 `
 export const BookDescription = styled.p`
 margin-bottom: 1rem;
+height: 200px;
 `
 
 
 export const BookInfo = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 2rem;
-text-align: center;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// padding: 2rem;
+// text-align: center;
 `
 export const  BookButton = styled.button`
 font-size: 1rem;
 padding: 1rem 4rem;
 border: none;
-background: #e31837;
-color: #fff;
+border-radius: 10px;
+background: #ffc1cc;
+color: black;
 transition: 0.2 ease-out;
+margin-top: 20px;
+margin-bottom: 50px;
 
 
 &:hover{
-bacground: #ffc500;
+background: #ffc500;
 transition: 0.2 ease-out;
 cursor: pointer;
 color: #000

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import {
   BookContainer,
   BookWrapper,
@@ -13,6 +14,7 @@ import {
 } from './Bookstyler';
 
 const Books = ({data}) => {
+let navigate = useNavigate()
 const [books, setBooks] =  useState ([])
 
 useEffect (() => {
@@ -37,7 +39,7 @@ useEffect (() => {
         <BookInfo>
         <BookDescription>{book.description}</BookDescription>
         <BookAuthor>{book.author}</BookAuthor>
-        <BookButton>Review</BookButton>
+        <BookButton onClick={()=>{ navigate('/review')}}>Review</BookButton> 
         </BookInfo>
         </BookCard>
       )

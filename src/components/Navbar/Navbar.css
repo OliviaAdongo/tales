@@ -2,7 +2,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: #ac815d;
+    background: #ac815d;
     position: sticky;
     top: 0;
 }
@@ -14,7 +14,7 @@
 .navbar ul li{
     font-size: 1.2rem;
     font-weight: bold;
-}
+} 
 .navbar ul li a{
     text-decoration: none;
     font-size: 19px;

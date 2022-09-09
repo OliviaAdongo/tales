@@ -13,8 +13,9 @@ border-radius: 15px;
  `
  export const Reviewer  = styled.h2`
 font-size: clamp(2rem, 2.5vw, 3rem);
-text-align: center;
+text-align: left;
 margin-bottom: 0px;
+margin-left: 50px;
  `
  export const ReviewWrapper = styled.div``
  export const ReviewCard = styled.div`
@@ -24,4 +25,7 @@ width: 300px;
 background: white;
  `
  export const ReviewList = styled.div``
- export const Views = styled.div``
+ export const Views = styled.div`
+ margin-top:15px;
+ 
+ `

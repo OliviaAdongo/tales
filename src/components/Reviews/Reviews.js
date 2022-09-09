@@ -92,7 +92,8 @@ const [reviews, setReview] = useState([])
 return (
   <ReviewCard key={index}>
   <ReviewList>
-  <Views>{reviews.reviews}
+  <Views>
+  <li>{reviews.reviews}</li>
   </Views>
   <button className='upvote' onClick={upvotefun}>Upvote{upvote}</button>
   <button className= 'downvote' onClick={downvotefun}>Downvote{downvote}</button>
