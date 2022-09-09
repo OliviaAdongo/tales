@@ -26,7 +26,7 @@ useEffect (() => {
   )
 }, [])
 
-
+// Submit
   const handleChange = (e) => {
     const {name, value} = e.target
     setData({...data, [name]:value})
@@ -44,7 +44,7 @@ useEffect (() => {
   }
   const remove = (e) =>{
     axios.delete("http://localhost:9292/reading", {
-
+      
     })
   }
   const update = (e) =>{

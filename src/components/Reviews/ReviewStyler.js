@@ -3,7 +3,7 @@ import styled from "styled-components";
  export const ReviewContainer =styled.div`
 margin-top: 0px;
 width: 1000px;
-height: 500px;
+height: 2000px;
 color: black;
 font-size: 15px;
 margin-right: -9px;
