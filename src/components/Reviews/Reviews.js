@@ -11,8 +11,51 @@ import{
 
 
 const Reviews = () => {
+// useState for upvoting and down votting
+const [upvote, setUpvote] = useState(1)
+const [downvote, setDownvote] = useState(0)
+
+const [upvoteactive, setUpvoteActive] = useState(false)
+const [downvoteactive, setDownvoteActive] = useState(false)
+
+//upvote function
+function upvotefun(){
+  // alert('Upvote')
+  if (upvoteactive) {
+    setUpvoteActive(false)
+    setUpvote(-1)
+  } else {
+    setUpvoteActive(true)
+    setUpvote(+1)
+
+    if (downvoteactive) {
+      setDownvoteActive(false)
+      setUpvote(upvote+1)
+      setDownvote(downvote -1)
+    }
+  }
+
+}
+function downvotefun(){
+  if (downvoteactive) {
+    setDownvoteActive(false)
+    setDownvote(downvote -1)
+  } else {
+    setDownvoteActive(true)
+    setDownvote(upvote -1)
+
+    if (upvoteactive) {
+      setUpvoteActive(false)
+      setUpvote(+1)
+      setDownvote(downvote -1)
+    }
+  }
+  
+}
+  // usestate for fetching reviews
 const [reviews, setReview] = useState([])
 
+// usestate for posting  reviews
   const [data, setData] = useState("")
   useEffect(()=>{
 
@@ -24,7 +67,6 @@ const [reviews, setReview] = useState([])
     fetch ('http://127.0.0.1:9292/review')
     .then (response => response.json())
     .then((reviews) =>
-    // console.log (products)
     setReview(reviews)
     )
   }, [])
@@ -45,14 +87,14 @@ const [reviews, setReview] = useState([])
 <Reviewer>Reviews</Reviewer>
 <ReviewContainer>
 <ReviewWrapper>
-{reviews.map((read,  index) =>{
+{reviews.slice(1).map((reviews,  index) =>{
 return (
   <ReviewCard key={index}>
   <ReviewList>
   <Views>{reviews.reviews}
   </Views>
-  <button className='upvote'>upvote</button>
-  <button className= 'downvote'>downvote</button>
+  <button className='upvote' onClick={upvotefun}>Upvote{upvote}</button>
+  <button className= 'downvote' onClick={downvotefun}>Downvote{downvote}</button>
   </ReviewList>
   
   </ReviewCard>
