@@ -1,0 +1,22 @@
+.add-review{
+    margin-left: 19px;
+    font-size: 20px;
+}
+.send-review{
+    background-color: paleturquoise; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    height: 50px;
+    margin-left: 25px;
+}
+.review-place{
+    height: 100px;
+    width: 400px;
+    background: white;
+}

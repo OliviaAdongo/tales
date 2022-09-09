@@ -1,4 +1,5 @@
 import axios from 'axios'
+import './Reviews.css'
 import React, { useEffect, useState } from 'react'
 import{
   ReviewContainer,
@@ -76,11 +77,11 @@ const [reviews, setReview] = useState([])
   return (
     <div>
     <form>
-  <label> 
+  <label className="add-review"> 
     Add Review: 
-    <input type="text" name="review" />
+    <input type="text" className="review-place" name="review" placeholder='Write review here...' />
   </label>
-  <input type="submit" value="Submit" />
+  <input className='send-review' type="submit" value="Submit" />
 </form>
 
 <div className="reviewer" >
