@@ -10,7 +10,7 @@ h4{
     padding: 1px 20px; 
     font-size: 25px;
 }
-/* button{
+.read-btn{
     position: absolute;
     right: 100px;
     bottom: 150px;
@@ -23,11 +23,11 @@ h4{
     min-width: 120px;
     transition: .6s ease;
 }
-button:hover{
+.read-btn:hover{
     cursor: pointer;
     background-color: paleturquoise;
     transition: 0.7s;
     box-shadow: 0  0  5px  white,  0  0  10px white, 0 0  15px white;
     font-weight: bold;
     color: black;
-} */
+}

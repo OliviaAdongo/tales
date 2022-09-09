@@ -6,7 +6,7 @@ const Home = () => {
     <div className='home'>
     <h1>LITTLE TALES</h1>
     <h4>Reading is to the mind what exercise is to the body</h4>
-    <button className='btn'>Read On</button>
+    <button className='read-btn'>Read On</button>
     
     </div>
   )
