@@ -44,3 +44,21 @@ text-align: center;
     margin-right: 50px;
 }
 
+.goto-reviews{
+        padding: 10px 35px;
+        background: black;
+        color: white;
+        border:none;
+        border-radius: 10px;
+        min-height:40px; 
+        min-width: 120px;
+        transition: .6s ease;
+    }
+    .goto-reviews:hover{
+        cursor: pointer;
+        background-color: paleturquoise;
+        transition: 0.7s;
+        box-shadow: 0  0  5px  white,  0  0  10px white, 0 0  15px white;
+        font-weight: bold;
+        color: black;
+    }

@@ -21,7 +21,7 @@ const Aboutus = () => {
                     optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
                     obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
                     nihil, eveniet aliquid culpa officia aut! </p>
-                    <button>Reviews</button>
+                    <button className='goto-reviews'>Reviews</button>
             </div>
 
             <div class="box2">
