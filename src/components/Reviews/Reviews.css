@@ -16,8 +16,11 @@
     margin-left: 25px;
 }
 .review-place{
+    margin-left: 10px;
     height: 100px;
     width: 400px;
+    border: none;
+    border-radius: 10px;
     background: white;
 }
 .upvote{

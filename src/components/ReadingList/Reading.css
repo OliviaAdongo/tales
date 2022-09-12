@@ -40,7 +40,10 @@ margin-left: 19px;
 font-size: 20px;
 }
 .readlist{
+    margin-left: 10px;
     height: 100px;
     width: 400px;
+    border: none;
+    border-radius: 10px;
     background: white;
 }
