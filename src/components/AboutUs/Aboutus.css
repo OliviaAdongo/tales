@@ -20,6 +20,7 @@ text-align: center;
     width: 200px;
     height: -6px;
     border: 3px solid #73c2fb;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +36,7 @@ text-align: center;
     width: 200px;
     height: -6px;
     border: 3px solid #73c2fb;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,8 +48,8 @@ text-align: center;
 
 .goto-reviews{
         padding: 10px 35px;
-        background: black;
-        color: white;
+        background: #73c2fb;
+        color: black;
         border:none;
         border-radius: 10px;
         min-height:40px; 
@@ -64,4 +66,20 @@ text-align: center;
     }
 .head1{
     margin-left: 29px;
+}
+.imageedu{
+height: 250px;
+width: 400px;
+max-width: 100%;
+    
+}
+.imagemadam{
+height: 150px;
+width: 400px;
+max-width: 100%;
+}
+.sensei{
+height: 150px;
+width: 400px;
+max-width: 100%;
 }
