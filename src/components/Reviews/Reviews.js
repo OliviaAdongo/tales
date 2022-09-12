@@ -60,12 +60,12 @@ const [reviews, setReview] = useState([])
   const [data, setData] = useState("")
   useEffect(()=>{
 
-  axios("http://localhost:9292/review")
+  axios("https://little-tales.herokuapp.com/review")
   .then((response) => {setData(response.data)})
   },[])
 
   useEffect (() => {
-    fetch ('http://127.0.0.1:9292/review')
+    fetch ('https://little-tales.herokuapp.com/review')
     .then (response => response.json())
     .then((reviews) =>
     setReview(reviews)

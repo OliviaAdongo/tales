@@ -26,11 +26,11 @@ For React  use npm:
 For Ruby use:
 1. bundle install
 ### Installation
-1. You will need a server when running this application therefore clone the repo [Server repo](https://github.com/OliviaAdongo/little-tales-server)
+1. You will need a server when running this application therefore clone the repo [Server repo](https://github.com/OliviaAdongo/tales-server)
 2. Install npm packages and run bundle install on  the server side
 
 ### Setup
-- You will also need the backened to run localy from [little-tales-server](https://github.com/OliviaAdongo/little-tales-server).
+- You will also need the backened to run localy from [little-tales-server](https://github.com/OliviaAdongo/tales-server).
 - You will need to npm install to get all the dependencies
 
 ## 3. Usage

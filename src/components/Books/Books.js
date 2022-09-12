@@ -18,7 +18,7 @@ let navigate = useNavigate()
 const [books, setBooks] =  useState ([])
 
 useEffect (() => {
-  fetch ('http://127.0.0.1:9292/books')
+  fetch ('https://little-tales.herokuapp.com/books')
   .then (response => response.json())
   .then((products) =>
   // console.log (products)

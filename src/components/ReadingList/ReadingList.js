@@ -18,7 +18,7 @@ const ReadingList = ({words}) => {
   // fetching reading list
 const [reader, setReader]= useState([])
 useEffect (() => {
-  fetch ('http://127.0.0.1:9292/reading')
+  fetch ('https://little-tales.herokuapp.com/reading')
   .then (response => response.json())
   .then((vitabu) =>
   // console.log (products)
@@ -37,18 +37,18 @@ useEffect (() => {
     e.preventDefault()
     console.log(data)
 
-    axios.post("http://localhost:9292/reading", {
+    axios.post("https://little-tales.herokuapp.com/reading", {
       book_name: data.book_name
     })
     .then(response => {console.log(response)})
   }
   const remove = (e) =>{
-    axios.delete("http://localhost:9292/reading", {
+    axios.delete("https://little-tales.herokuapp.com/reading", {
       
     })
   }
   const update = (e) =>{
-    axios.put("http://localhost:9292/reading", {
+    axios.put("https://little-tales.herokuapp.com/reading", {
 
     })
   }
